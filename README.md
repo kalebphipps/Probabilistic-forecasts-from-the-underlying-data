@@ -1,4 +1,4 @@
-# Probabilistic-forecasts-from-the-underlying-data
+# Probabilistic Forecasts from the Underlying Data
 This repository contains code to replicate the results from Chapter 4 of the Dissertation "Quantifying and Interpreting Uncertainty in Time Series Forecasting" by Kaleb Phipps.
 
 ## Repository Structure
