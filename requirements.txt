@@ -1,0 +1,9 @@
+git+https://github.com/KIT-IAI/pyWATTS.git@auto_cd
+FrEIA==0.2
+gluonts==0.12.7
+properscoring==0.1
+pytorch-forecasting==0.10.3
+xgboost==1.7.5
+numpy==1.23.5
+chardet
+cchardet

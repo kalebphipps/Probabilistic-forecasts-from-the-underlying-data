@@ -1,3 +1,5 @@
+import os
+
 import pandas as pd
 
 from pywatts.modules import CalendarExtraction, CalendarFeature, SKLearnWrapper
@@ -78,6 +80,11 @@ if __name__ == "__main__":
               "****************************************************************************************************"
               "****************************************************************** *")
 
-    df_eval.to_csv(f"Summaries/evaluation_{PIPELINE_NAME}.csv")
+    save_path = "../Summaries"
+    isExist = os.path.exists(save_path)
+    if not isExist:
+        # Create a new directory because it does not exist
+        os.makedirs(save_path)
+    df_eval.to_csv(f"{save_path}/evaluation_{PIPELINE_NAME}.csv")
 
     print("Finished all runs!")
